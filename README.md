@@ -21,6 +21,7 @@ https://turing.inf.ufg.br/pluginfile.php/155869/mod_resource/content/1/CG7Trac%C
 
 * O algoritmo termina quando x >= y, ou seja, quando o arco de 45° é completado. A função auxiliar <b>CirclePoints</b> é usada para <u>desenhar os oito pontos simétricos de cada pixel gerado pelo algoritmo, usando a função glBegin com o parâmetro GL_POINTS para desenhar cada pixel na tela</u>.
 
+
 * O algoritmo do ponto-médio também evita gaps e variações de espessura na circunferência, mantendo uma densidade uniforme de pixels.
     * <u>Gaps</u>: são espaços vazios entre os pixels que formam a circunferência, que podem comprometer a continuidade e a suavidade da figura.
     * <u>Variações de espessura</u>: são diferenças no tamanho dos pixels que formam a circunferência, que podem comprometer a uniformidade e a simetria da figura.

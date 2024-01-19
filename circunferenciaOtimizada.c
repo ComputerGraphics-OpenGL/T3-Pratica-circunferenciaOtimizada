@@ -23,9 +23,9 @@ void MidPointCircle(int x_centre, int y_centre, int r, int color) {
     CirclePoints(x + x_centre, y + y_centre, color); // Desenha os pontos iniciais
     while (x < y) { // Enquanto x for menor que y
         x++; // Incrementa x em uma unidade
-        if (d < 0) { // Se o ponto médio está dentro da circunferência
+        if (d < 0) { // Se o ponto médio está dentro da circunferência [o pixel E é escolhido]
             d = d + 2 * x + 1; // Atualiza a variável de decisão
-        } else { // Se o ponto médio está fora da circunferência
+        } else { // Se o ponto médio está fora da circunferência [pixel SE é escolhido]
             y--; // Decrementa y em uma unidade
             d = d + 2 * (x - y) + 1; // Atualiza a variável de decisão
         }
