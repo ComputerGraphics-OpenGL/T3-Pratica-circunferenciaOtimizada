@@ -18,9 +18,10 @@ https://turing.inf.ufg.br/pluginfile.php/155869/mod_resource/content/1/CG7Trac%C
 * O algoritmo é baseado na função <b>F(x, y) = x^2 + y^2 - R^2</b>, que é <u>zero sobre a circunferência, positiva fora dela e negativa dentro</u>. Consiste em escolher entre dois pixels candidatos, E e SE, a partir do valor da função no ponto médio entre eles. Se o ponto médio está fora da circunferência, o pixel SE é escolhido, caso contrário, o pixel E é escolhido.
 
 * O algoritmo também usa uma <b>variável de decisão d</b>, que é inicializada como d = 1 - R, e é atualizada a cada iteração, dependendo do pixel escolhido. Se d < 0, o pixel E é escolhido, e d é atualizado como d = d + 2 * x + 1. Se d >= 0, o pixel SE é escolhido, e d é atualizado como d = d + 2 * (x - y) + 1.
+<img src="img2.png">
 
 * O algoritmo termina quando x >= y, ou seja, quando o arco de 45° é completado. A função auxiliar <b>CirclePoints</b> é usada para <u>desenhar os oito pontos simétricos de cada pixel gerado pelo algoritmo, usando a função glBegin com o parâmetro GL_POINTS para desenhar cada pixel na tela</u>.
-
+<img src="img1.png">
 
 * O algoritmo do ponto-médio também evita gaps e variações de espessura na circunferência, mantendo uma densidade uniforme de pixels.
     * <u>Gaps</u>: são espaços vazios entre os pixels que formam a circunferência, que podem comprometer a continuidade e a suavidade da figura.
